@@ -85,8 +85,8 @@
             openni_depth_mode: false # 'false': 32bit float [meters], 'true': 16bit unsigned int [millimeters]
             point_cloud_freq: 10.0 # [DYNAMIC] Frequency of the pointcloud publishing. This value must be equal or less than the camera framerate.
             point_cloud_res: 'COMPACT' # The resolution used for point cloud publishing - 'COMPACT'-Standard resolution. Optimizes processing and bandwidth, 'REDUCED'-Half resolution. Low processing and bandwidth requirements
-            depth_confidence: 95 # [DYNAMIC]
-            depth_texture_conf: 100 # [DYNAMIC]
+            depth_confidence: 40 # [DYNAMIC]
+            depth_texture_conf: 99 # [DYNAMIC]
             remove_saturated_areas: true # [DYNAMIC]
             publish_depth_map: true # Advertise the depth map topics that are published only if a node subscribes to them
             publish_depth_info: false # Advertise the depth info topic that is published only if a node subscribes to it
@@ -199,7 +199,7 @@
             debug_video_depth: false
             debug_camera_controls: false
             debug_point_cloud: false
-            debug_positional_tracking: true
+            debug_positional_tracking: false
             debug_gnss: false
             debug_sensors: false
             debug_mapping: false
